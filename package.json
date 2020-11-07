@@ -1,7 +1,7 @@
 {
-  "name": "egg-cache",
-  "version": "0.0.7",
-  "description": "Cache plugin for Egg",
+  "name": "egg-cachex",
+  "version": "0.0.8",
+  "description": "Cache plugin for Egg, fork from egg-cache",
   "eggPlugin": {
     "name": "cache"
   },
@@ -14,21 +14,21 @@
     "cache-manager": "^2.9.0"
   },
   "devDependencies": {
-    "autod": "^3.0.0",
+    "autod": "^3.1.0",
     "autod-egg": "^1.0.0",
-    "egg": "^2.0.0",
-    "egg-bin": "^4.3.0",
-    "egg-ci": "^1.8.0",
-    "egg-mock": "^3.13.0",
-    "eslint": "^4.11.0",
-    "eslint-config-egg": "^5.1.0",
+    "egg": "^2.27.0",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.15.0",
+    "egg-mock": "^3.25.1",
+    "eslint": "^7.12.0",
+    "eslint-config-egg": "^7.5.1",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test": "egg-bin pkgfiles && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",

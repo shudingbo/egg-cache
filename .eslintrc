@@ -1,3 +1,17 @@
 {
-  "extends": "eslint-config-egg"
+  "extends": "eslint-config-egg",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "eol-last": [2, "always"],
+    "linebreak-style": [0, "windows"],
+    "space-before-function-paren": ["error", "always"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  }
 }
